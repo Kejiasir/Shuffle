@@ -37,4 +37,11 @@ import UIKit
 
   @objc
   optional func didSwipeAllCards(_ cardStack: SwipeCardStack)
+    
+  @objc
+  func cardStackDidBeginAnimating(_ cardStack: SwipeCardStack)
+    
+  @objc
+  func cardStackDidEndAnimating(_ cardStack: SwipeCardStack)
+
 }

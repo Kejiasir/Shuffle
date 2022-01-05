@@ -162,6 +162,11 @@ open class SwipeCard: SwipeView {
     delegate?.cardDidBeginSwipe(self)
     animator.removeAllAnimations(on: self)
   }
+    
+  open override func endSwiping(_ recognizer: UIPanGestureRecognizer) {
+    super.endSwiping(recognizer)
+    delegate?.cardDidEndSwipe(self)
+  }
 
   override open func continueSwiping(_ recognizer: UIPanGestureRecognizer) {
     super.continueSwiping(recognizer)
